@@ -20,3 +20,11 @@ set autoindent
 syntax enable
 set background=dark
 colorscheme solarized
+" NERDTreeをCtrl+Nで開閉する
+map <C-n> :NERDTreeToggle<CR>
+
+" vim-plugでのプラグイン管理
+call plug#begin('~/.vim/plugged')
+" ディレクトリツリーを表示する
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+call plug#end()
