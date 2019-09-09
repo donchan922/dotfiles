@@ -1,3 +1,11 @@
+" vim-plugでのプラグイン管理
+call plug#begin('~/.vim/plugged')
+" ディレクトリツリーを表示する
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+call plug#end()
+" NERDTreeをCtrl+Nで開閉する
+map <C-n> :NERDTreeToggle<CR>
+
 " 行番号を表示する
 set number
 " タブをスペースに置き換える
@@ -14,17 +22,7 @@ set ignorecase
 set smartcase
 " インクリメンタルサーチ
 set incsearch
-" オートインデント
-set autoindent
 " Solarized設定
 syntax enable
 set background=dark
 colorscheme solarized
-" NERDTreeをCtrl+Nで開閉する
-map <C-n> :NERDTreeToggle<CR>
-
-" vim-plugでのプラグイン管理
-call plug#begin('~/.vim/plugged')
-" ディレクトリツリーを表示する
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-call plug#end()
