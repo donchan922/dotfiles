@@ -28,6 +28,8 @@ set autoindent
 set smartindent
 " yank時にクリップボードにもコピーする
 set clipboard=unnamed
+" デリートキーで文字を削除できるようにする
+set backspace=indent,eol,start
 " Solarized設定
 syntax enable
 set background=dark
