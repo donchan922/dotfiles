@@ -1,4 +1,3 @@
-" vim-plugでのプラグイン管理
 call plug#begin('~/.vim/plugged')
 " ディレクトリツリーを表示する
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
@@ -26,8 +25,6 @@ set incsearch
 set autoindent
 " 改行時に入力された行の末尾に合わせて次の行のインデントを増減する
 set smartindent
-" yank時にクリップボードにもコピーする
-set clipboard=unnamed
 " デリートキーで文字を削除できるようにする
 set backspace=indent,eol,start
 " Solarized設定
