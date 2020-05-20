@@ -1,10 +1,3 @@
-call plug#begin('~/.vim/plugged')
-" ディレクトリツリーを表示する
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-call plug#end()
-" NERDTreeをCtrl+Nで開閉する
-map <C-n> :NERDTreeToggle<CR>
-
 " 行番号を表示する
 set number
 " タブをスペースに置き換える
